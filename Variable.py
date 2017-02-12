@@ -35,3 +35,10 @@ with tf.Session() as sess:
     # sess.run(output)
     print(sess.run(output, feed_dict={input1:[7., 3.], input2:[2.2, .5]}))
     
+Running-Result:
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce 940MX, pci bus id: 0000:01:00.0)
+1
+2
+3
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce 940MX, pci bus id: 0000:01:00.0)
+[ 15.40000057   1.5       ]
