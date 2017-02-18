@@ -9,7 +9,6 @@ y_data = x_data*0.1 + 0.3
 
 #print(x_data,y_data)
 
-
 # create tf struct begin #
 
 Weights = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
@@ -42,6 +41,8 @@ b = sess.run(Biases)
 
 print("Result is: Weight ----- Biases")
 print(w, b)
+
+"""
 Running-Result：
 I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core\common_runtime\gpu\gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce 940MX, pci bus id: 0000:01:00.0)
 0 [ 0.15538068] [ 0.36024028]
@@ -57,3 +58,4 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\core
 
 Result is: Weight ----- Biases
        [ 0.10000017] [ 0.29999992]
+"""
